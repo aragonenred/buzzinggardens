@@ -1,0 +1,196 @@
+:root{
+    --fontTitle: 'Great Vibes', cursive;
+    --fontPrimary: 'Quicksand', sans-serif;
+    --bgColorPrimary: rgb(228, 240, 204);
+    --bgColorSecundary: #ffffff;
+    --grey: rgb(94, 94, 94);
+    --greySecundary: rgb(198,198,198);
+    --black: rgb(22, 22, 22);
+    --blackSecundary: rgb(11, 11, 11);
+}
+/**Sniped**/
+html{
+    box-sizing: border-box; /**para que el padding no afecte al tamaño de un objeto **/
+    font-size: 62.5%; /**Reset para REMS 10px de 16px. Para que 1rem sea igual a 10px**/
+    min-height: 100%; /**Para que el fondo degradado sea fijo**/
+  }
+  
+  body{min-height: 100%;}/**Para que el fondo degradado sea fijo**/
+  
+  *, *:before, *:after{box-sizing: inherit;}/**para que el padding no afecte al tamaño de un objeto **/
+
+
+p{
+    font-family: var(--fontPrimary);
+    font-size: 1.6rem;
+    margin: 0;
+}
+h2{
+    font-family: var(--fontTitle);
+    font-size: 3.6rem;
+    font-weight: lighter;
+}
+h4{
+    font-family: var(--fontPrimary);
+    font-size: 1.6rem;
+    font-weight: 200;
+    color: var(--grey);
+    text-align: center;
+}
+a{
+    font-family: var(--fontPrimary);
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: var(--blackSecundary);
+
+}
+ul{
+    list-style:none;
+    font-family: var(--fontPrimary);
+    font-size: 1.6rem;
+}
+
+
+header{
+    background-color: var(--bgColorPrimary);
+    padding-bottom: 2.5rem;
+}
+.btn{
+    padding: 1.5rem 2.5rem;
+    border:solid .1rem rgb(22, 22, 22);
+    display: inline-block;
+    margin-top: 2rem;
+    font-weight:600;
+}
+.promo-banner{
+    background-color: var(--black);
+    color: var(--bgColorSecundary);
+    padding: 1rem;
+    text-align: center;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 110rem;
+}
+/**HEADER**/
+.nav-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+}
+.nav li{
+    margin-right: 1rem;
+    list-style: none;
+    display: inline-block;
+}
+.hero{
+    text-align: center;
+    height: 50rem;
+    background-image: url(../img/Hero.webp);
+    background-position: top ;
+    background-repeat: no-repeat;
+    
+}
+.contact-header{
+    text-align: center;
+}
+
+/**Team Section**/
+.team{
+    display: flex;
+    justify-content: space-between;
+}
+.team-card{
+    flex-basis: calc(50% - 2rem);
+    text-align: center;
+    color:var(--grey)
+}
+.team-card p{
+    font-weight: 400;
+    line-height: 1.25;
+    font-size: 2.2rem;
+}
+
+/**About Us**/
+.section-about{
+    background-color: var(--bgColorPrimary);
+    margin-top: 5rem;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+}
+.about h4{
+    text-align: left;
+}
+.about-text p{
+    line-height: 1.75;
+    margin-bottom: 8rem;
+}
+.about div{
+    flex-basis: calc(50% - 1rem);
+}
+.about-img{
+    background-image: url(../img/about.webp);
+    background-position: center center;
+    
+}
+
+/**Galery**/
+.carrousel{
+    height: 40rem;
+    background-color: lawngreen;
+}
+
+
+/**Contact**/
+.contact{
+    color: var(--grey);
+    text-align: center;
+    max-width: 50%;
+    line-height: 1.75;
+}
+.contact h2{
+    margin-bottom: 1rem;
+}
+
+/**Review**/
+.section-review{
+    background-color: var(--bgColorPrimary);
+}
+.review{
+    background-image:url(../img/review.webp);
+}
+.review h2{
+    color: white !important;
+    font-size: 5rem;
+    text-align: center;
+}
+.review blockquote{
+    background-color: white;
+    font-family: var(--fontPrimary);
+    font-size: 1.6rem;
+    color:var(--grey);
+    width: 30rem;
+    padding: 4rem 3rem;
+    text-align: center;
+}
+.review blockquote span{
+    font-weight: bold;
+}
+.review blockquote p i{
+    color: rgb(245 245 15);
+}
+.review blockquote q{
+    display: block;
+    margin: 2.5rem 0;
+}
+.review img{
+    margin-bottom: 2rem;
+    border-radius: 50%;
+}
+
+
+
