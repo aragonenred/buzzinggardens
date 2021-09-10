@@ -81,6 +81,7 @@ header{
     -moz-box-shadow: 0px 3px 5px 0px rgba(181,177,181,1);
     box-shadow: 0px 3px 5px 0px rgba(181,177,181,1);
     transition: ease-in 0.3s;
+    z-index: 1000;
 }
 .nav-header{
     justify-content: space-between;
@@ -171,16 +172,32 @@ header{
     margin-bottom: 1rem;
     font-size: 4rem;
 }
+.contact .days{
+    text-align: left;
+    font-family: var(--fontPrimary);
+    font-size: 1.6rem; 
+}
+.contact .days table{
+    text-align: left;
+    margin: 0 auto;
+}
+.selectDay{
+    font-weight: 800;
+}
+.calendar-title{
+    cursor: pointer;
+}
 
 /**Review**/
 .section-review{
     background-color: var(--bgColorPrimary);
+    margin-top: 6rem;
 }
 .review{
     background-image:url(../img/review.webp);
     background-position: center center;
     background-size: cover;
-    padding: 5rem 0;
+    padding: 5rem 0 15rem 0;
 }
 .review h2{
     color: white !important;
@@ -200,6 +217,8 @@ header{
     width: 30rem;
     padding: 4rem 3rem;
     text-align: center;
+    position: relative;
+
 }
 .review blockquote span{
     font-weight: bold;
@@ -215,6 +234,27 @@ header{
     margin-bottom: 2rem;
     border-radius: 50%;
 }
+
+.rw-fullText{
+    top:0;
+    left: 0;
+    margin-top: 0;  
+    position: absolute; 
+    height: 100%;
+    overflow: hidden;
+}
+.rw-fullText div{
+    background-color: var(--bgColorPrimary);
+    margin-top: 50rem;
+    transition: ease-in-out 0.6s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 2rem;
+}
+
+
 
 
 /**Footer**/
