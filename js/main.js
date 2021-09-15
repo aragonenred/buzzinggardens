@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function(){
         });
     } 
     
-    fixNav();
+    fixedNav();
     setCalendarTitle();
     showCalendar();
 
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 
-    function fixNav(){
+    function fixedNav(){
         window.addEventListener('scroll', function(){
             if(window.scrollY > nav_position ){
                 hero.style.setProperty('margin-top',nav.offsetHeight  + 'px');
