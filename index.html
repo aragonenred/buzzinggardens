@@ -9,7 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/c21db70a60.js" crossorigin="anonymous"></script>     
+    <script src="https://kit.fontawesome.com/c21db70a60.js" crossorigin="anonymous"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>    
+    <!-- Fotorama from CDNJS, 19 KB -->
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
     <link rel="stylesheet" href="css/styles.css">
 
 </head>
@@ -39,14 +43,18 @@
     <section class="contact-header">
         <h2>Trust Your Project to Us</h2>
         <p>We help keep the grass greener!</p>
-      
-        <a href="#" class="btn">-- Online Enquiry -- </a>
+        
+        <a href="#" class="btn"> Online Enquiry  </a>
     </section>
 </header>
 
 <main>
     <section class="container">
-        <h4> Our Team </h4>
+        <div class="separator">
+            <h4 >Our Team</h4>
+        </div>
+            
+        
         <div class="team">
             <div class="team-card">
                 <h2>Caroline B.</h2>
@@ -63,7 +71,10 @@
         
         <div class="about container">
             <div>
-                <h4>About Us</h4>
+                <div class="separator aling-left">
+                    <h4>About Us</h4>
+                </div>
+                
                 <div class="about-text">
                     <h2>Experienced and Service</h2>
                     <p>At Buzzing Gardens we aim to provide quality horticultural services. Whether it's just a tidy up of your garden, or more of a renovation. We are always happy to help re-build and re-establish your garden into a lush greenery you've always wanted.
@@ -83,47 +94,60 @@
         </div>  
     </section>
     <section class="galery container">
-        <h4> Tips Gallery</h4>
-        <div class="carrousel"></div>
-        <h4>Lorem ipsum dolor sit amet.</h4>
+        <div class="separator">
+            <h4> Tips Gallery</h4>
+        </div>
+        
+        <div class="fotorama"  data-nav="thumbs" data-maxheight="90%" data-autoplay="true">  >
+            <img src="img/fotorama/1.jfif" data-caption="Eye Popping Colour Japanese Maple." alt="">
+            <img src="img/fotorama/2.jfif" alt="" data-caption="Luscious Tomatoes you could be growing in your garden" >
+            <img src="img/fotorama/3.jfif" alt="" data-caption="Create a Beautiful out door space to enjoy.">
+            <img src="img/fotorama/4.jfif" alt="" data-caption="Having rich soil helps your garden flourish.">
+            <img src="img/fotorama/5.jfif" alt="" data-caption="Clipping your hedges to create that manicured look.">
+        </div>
+        
     </section>
 
-    <section class="contact container"> 
-        <h4>Contact Us</h4>
-        <h2>Locations we service</h2>
-        <p>Ringwood, Templestowe, Warrandyte, Croydon, Box Hill, Nunawading, Blackburn, Donvale, Doncaster, Balwyn, Bulleen, Mitcham, Warranwood and more.</p>
+    <section class="container"> 
+        <div class="separator">
+            <h4>Contact Us</h4>
+        </div>
+        <div class="contact container">
+            <h2>Locations we service</h2>
+            <p>Ringwood, Templestowe, Warrandyte, Croydon, Box Hill, Nunawading, Blackburn, Donvale, Doncaster, Balwyn, Bulleen, Mitcham, Warranwood and more.</p>
 
-        <h2>Buzzing Gardens</h2>
-        <p>Ringwood, Victoria, Australia</p>
+            <h2>Buzzing Gardens</h2>
+            <p>Ringwood, Victoria, Australia</p>
 
-        <h2>Trading Hours</h2>
-        <div class="days">
-            <table>
-                <tr id="calendar-head" class="calendar-title">
-                    <th>Open today <th><i class="fas fa-sort-down"></i></th>
-                </tr>
-                <tr id="day-1" class="calendar-title" hidden>
-                    <td hidden>Open</td><td>Mon</td><td>09:00 am - 05:00 pm</td><td><i class="fas fa-sort-up"></i></td>
-                </tr>
-                <tr id="day-2" hidden >
-                    <td hidden>Open</td><td>Tue</td><td>09:00 am - 05:00 pm</td><td></td>
-                </tr>
-                <tr id="day-3"hidden >
-                    <td hidden>Open</td><td>Wed</td><td>09:00 am - 05:00 pm</td><td></td>
-                </tr>
-                <tr id="day-4" hidden>
-                    <td hidden>Open</td><td>Thu</td><td>09:00 am - 05:00 pm</td><td></td>
-                </tr>
-                <tr id="day-5" hidden>
-                    <td hidden>Open</td><td>Fri</td><td>09:00 am - 05:00 pm</td><td></td>
-                </tr>
-                <tr id="day-6" hidden>
-                    <td hidden>Open</td><td>Sat</td><td>By Appointment</td><td></td>
-                </tr>
-                <tr id="day-0" hidden>
-                    <td hidden> </td><td>Sun</td><td>Closed</td><td></td>
-                </tr>
-            </table>
+            <h2>Trading Hours</h2>
+            <div class="days">
+                <table>
+                    <tr id="calendar-head" class="calendar-title">
+                        <th>Open today <th><i class="fas fa-sort-down"></i></th>
+                    </tr>
+                    <tr id="day-1" class="calendar-title" hidden>
+                        <td hidden>Open</td><td>Mon</td><td>09:00 am - 05:00 pm</td><td><i class="fas fa-sort-up"></i></td>
+                    </tr>
+                    <tr id="day-2" hidden >
+                        <td hidden>Open</td><td>Tue</td><td>09:00 am - 05:00 pm</td><td></td>
+                    </tr>
+                    <tr id="day-3"hidden >
+                        <td hidden>Open</td><td>Wed</td><td>09:00 am - 05:00 pm</td><td></td>
+                    </tr>
+                    <tr id="day-4" hidden>
+                        <td hidden>Open</td><td>Thu</td><td>09:00 am - 05:00 pm</td><td></td>
+                    </tr>
+                    <tr id="day-5" hidden>
+                        <td hidden>Open</td><td>Fri</td><td>09:00 am - 05:00 pm</td><td></td>
+                    </tr>
+                    <tr id="day-6" hidden>
+                        <td hidden>Open</td><td>Sat</td><td>By Appointment</td><td></td>
+                    </tr>
+                    <tr id="day-0" hidden>
+                        <td hidden> </td><td>Sun</td><td>Closed</td><td></td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </section>
 </main>
@@ -171,7 +195,7 @@
 </section>
 
 <footer>
-    <p><i class="fab fa-facebook"></i> <i class="fab fa-instagram"></i></p>
+    <p><a href="#"><i class="fab fa-facebook"></i></a> <a href="#"><i class="fab fa-instagram"></i></a></p>
     <p>Copyright © 2021 Buzzing Gardens - All Rigths Reserved</p>
     <nav class="nav-footer">
         <a href="#">About Us</a>

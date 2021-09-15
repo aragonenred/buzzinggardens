@@ -5,6 +5,7 @@
     --bgColorSecundary: #ffffff;
     --grey: rgb(94, 94, 94);
     --greySecundary: rgb(198,198,198);
+    --green:#8f9680;
     --black: rgb(22, 22, 22);
     --blackSecundary: rgb(11, 11, 11);
 }
@@ -29,6 +30,7 @@ h2{
     font-family: var(--fontTitle);
     font-size: 3.6rem;
     font-weight: lighter;
+    color: var(--green);
 }
 h4{
     font-family: var(--fontPrimary);
@@ -50,6 +52,36 @@ ul{
     font-size: 1.6rem;
 }
 
+/**Separator**/
+
+.aling-left{
+    text-align: left!important;
+}
+.separator{
+    text-align: center;
+    overflow: hidden;
+    max-width: 97%;
+    margin: 0 auto;
+}
+.separator h4{
+    display: inline-block;
+    position: relative;
+}
+.separator h4::after, .separator h4::before{
+    content: '';
+    position: absolute;
+    background-color: rgb(198, 198, 198);
+    width: 500px;
+    height: 1px;
+    top:1rem;
+}
+.separator h4::before{
+    left: -520px;
+}
+.separator h4::after{
+     right: -520px;
+}
+
 
 header{
     background-color: var(--bgColorPrimary);
@@ -61,6 +93,12 @@ header{
     display: inline-block;
     margin-top: 2rem;
     font-weight:600;
+    transition: all .3s ease-in-out;
+}
+.btn:hover{
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(181,177,181,1);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(181,177,181,1);
+    box-shadow: 0px 3px 5px 0px rgba(181,177,181,1);
 }
 .promo-banner{
     background-color: var(--black);
@@ -73,6 +111,7 @@ header{
     margin: 0 auto;
     max-width: 110rem;
 }
+
 /**HEADER**/
 .fixed{
     position: fixed;
@@ -99,6 +138,12 @@ header{
     margin-right: 1rem;
     list-style: none;
     display: inline-block;
+    
+}
+.nav li:hover{
+    border-bottom: var(--grey) 1px solid ;
+ 
+    
 }
 .hero{
     text-align: center;
@@ -111,6 +156,10 @@ header{
 }
 .contact-header{
     text-align: center;
+    color: black;
+}
+.contact-header h2{
+    color: black;
 }
 
 /**Team Section**/
@@ -141,6 +190,9 @@ header{
 .about h4{
     text-align: left;
 }
+.about h2{
+    color: black;
+}
 .about-text p{
     line-height: 1.75;
     margin-bottom: 8rem;
@@ -155,9 +207,8 @@ header{
 }
 
 /**Galery**/
-.carrousel{
-    height: 40rem;
-    background-color: lawngreen;
+.galery{
+   text-align: center;
 }
 
 
